@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eo pipefail
+
 
 log() {
     time=$(date +%T)
@@ -42,4 +42,4 @@ COMMAND="$COMMAND $@"
 
 log "Starting server with command: $COMMAND"
 
-exec $COMMAND && echo "WHAT THE FUCK"
+exec $COMMAND || echo "WHAT THE FUCK"
