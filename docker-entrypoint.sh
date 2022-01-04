@@ -39,7 +39,7 @@ if [[ -n ${PA_SERVER_PASSWORD} ]]; then
     log "Password enabled"
 fi
 
-COMMAND="$COMMAND $@"
+COMMAND="$COMMAND"
 
 log "Starting server with command: $COMMAND"
 log "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
