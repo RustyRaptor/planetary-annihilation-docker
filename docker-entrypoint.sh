@@ -42,6 +42,4 @@ COMMAND="$COMMAND $@"
 
 log "Starting server with command: $COMMAND"
 
-exec $COMMAND
-exec sleep 60
-
+exec $COMMAND && echo "WHAT THE FUCK"
