@@ -10,7 +10,7 @@ COMMAND="${INSTALL_LOC}/server \
     --allow-lan \
     --headless \
     --enable-crash-reporting \
-    --mt-enables \
+    --mt-enabled \
     --output-dir ${REPLAYS_LOC} \
     --replay-filename UTCTIMESTAMP \
     --port 20545 \
