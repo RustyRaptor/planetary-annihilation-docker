@@ -16,11 +16,11 @@ RUN mkdir -p /patserver && \
 
 FROM ubuntu AS runner
 
-ARG UID=0
+ARG UID=999
 ARG PA_STREAM_NAME=stable
 
-ENV INSTALL_LOC=/patserver
-ENV REPLAYS_LOC=/replays
+ENV INSTALL_LOC=/home/ziad/patserver
+ENV REPLAYS_LOC=/home/ziad/replays
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install PAT dependencies
