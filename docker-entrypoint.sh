@@ -8,7 +8,9 @@ log() {
 
 COMMAND="${INSTALL_LOC}/server \
     --allow-lan \
+    --headless \
     --enable-crash-reporting \
+    --mt-enables \
     --output-dir ${REPLAYS_LOC} \
     --replay-filename UTCTIMESTAMP \
     --port 20545 \
@@ -42,4 +44,4 @@ COMMAND="$COMMAND $@"
 
 log "Starting server with command: $COMMAND"
 
-exec echo "WHAT THE FUCK"
+exec $COMMAND
