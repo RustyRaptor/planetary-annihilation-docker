@@ -8,6 +8,7 @@ log() {
 
 COMMAND="${INSTALL_LOC}/server \
     --allow-lan \
+    --enable-crash-reporting \
     --mt-enabled \
     --output-dir ${REPLAYS_LOC} \
     --replay-filename UTCTIMESTAMP \
