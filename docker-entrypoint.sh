@@ -42,4 +42,4 @@ COMMAND="$COMMAND $@"
 
 log "Starting server with command: $COMMAND"
 
-exec $COMMAND || echo "WHAT THE FUCK"
+exec echo "WHAT THE FUCK"
