@@ -42,5 +42,5 @@ COMMAND="$COMMAND $@"
 
 log "Starting server with command: $COMMAND"
 
-exec find /
+exec $COMMAND
 
