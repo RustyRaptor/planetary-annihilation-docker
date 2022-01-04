@@ -7,7 +7,6 @@ log() {
 }
 
 COMMAND="${INSTALL_LOC}/server \
-    --headless \
     --allow-lan \
     --mt-enabled \
     --output-dir ${REPLAYS_LOC} \
@@ -44,3 +43,4 @@ COMMAND="$COMMAND $@"
 log "Starting server with command: $COMMAND"
 
 exec $COMMAND
+log "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
